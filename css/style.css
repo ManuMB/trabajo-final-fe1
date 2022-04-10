@@ -1,0 +1,72 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 5rem;
+    gap: 10rem;
+}
+
+.nav-bar img{
+    align-self: center;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.landing-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.landing-text h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #232C50;
+    text-align: center;
+}
+
+.landing-text button{
+    background-color: #F3603B;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 5rem;
+    color: white;
+    box-shadow: 0rem 0.4rem 0.8rem rgba(242, 97, 59, 0.5);
+    margin-top: 1rem;
+}
+
+.different{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.list-title{
+    padding: 0 3.5rem 0 3.5rem;
+    gap: 5rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list h4{
+    background-color: #fff0eb;
+    background-position: 10rem;
+    padding: 0.8rem 0 0.8rem 0;
+    margin-left: 8rem;
+}
+
+
+
