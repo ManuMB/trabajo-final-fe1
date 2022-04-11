@@ -107,7 +107,7 @@ p{
 
 h2{
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.8rem;
   text-align: center;
   color: #232851;
 }
@@ -211,6 +211,15 @@ textarea {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+.button-orange{
+  background-color: #F3603B;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 5rem;
+  color: white;
+  box-shadow: 0rem 0.4rem 0.8rem rgba(242, 97, 59, 0.5);
+  margin-top: 1rem;
 }
 
 /**

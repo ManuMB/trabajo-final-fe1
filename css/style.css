@@ -33,15 +33,6 @@
     text-align: center;
 }
 
-.landing-text button{
-    background-color: #F3603B;
-    padding: 1rem 2.5rem 1rem 2.5rem;
-    border-radius: 5rem;
-    color: white;
-    box-shadow: 0rem 0.4rem 0.8rem rgba(242, 97, 59, 0.5);
-    margin-top: 1rem;
-}
-
 .different{
     display: flex;
     flex-direction: column;
@@ -51,14 +42,17 @@
 }
 
 .list-title{
+    display: flex;
+    flex-direction: column;
     padding: 0 3.5rem 0 3.5rem;
-    gap: 5rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .list{
     display: flex;
     flex-direction: column;
-
+    gap: 3rem;
 }
 
 .list h4{
@@ -68,5 +62,58 @@
     margin-left: 8rem;
 }
 
+.list div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+.list p{
+    align-items: flex-start;
+    /* padding: 0 5rem 0 5rem; */
+}
 
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6.5rem;
+    margin-top: 6rem;
+}
+
+.testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 3.5rem 0 3.5rem;
+}
+
+.get-started{
+    background-color:#F3613C;
+    text-align: center;
+    padding: 7rem 0 7rem 0;
+    margin-top: 4rem;
+}
+
+.get-started h2{
+    color: white;
+    margin: 0 7rem 0 7rem;
+}
+
+.get-started button{
+background-color: white;
+padding: 1rem 2.5rem 1rem 2.5rem;
+border-radius: 5rem;
+color: #F3613C;
+box-shadow: 0rem 0.4rem 0.8rem rgba(242, 97, 59, 0.5);
+margin-top: 2rem;
+}
+
+.footer{
+    background-color: #1E1E26;
+    padding: 20rem 0 20rem 0;
+}
