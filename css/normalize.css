@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+:root{
+  --primary-color: rgb(242, 95, 58);
+  --secondary-color: rgb(35, 44, 81);
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -109,14 +114,18 @@ h2{
   font-weight: 700;
   font-size: 2.8rem;
   text-align: center;
-  color: #232851;
+  color: var(--secondary-color);
 }
 
 h4{
   font-weight: 700;
   font-size: 1.3rem;
   text-align: center;
-  color: #323851;
+  color: var(--secondary-color);
+}
+
+li{
+  list-style: none;
 }
 
 /**
@@ -215,9 +224,10 @@ textarea {
 
 .button-orange{
   background-color: #F3603B;
-  padding: 1rem 2.5rem 1rem 2.5rem;
+  padding: 1.3rem 2.5rem 1.3rem 2.5rem;
   border-radius: 5rem;
   color: white;
+  font-weight: 500;
   box-shadow: 0rem 0.4rem 0.8rem rgba(242, 97, 59, 0.5);
   margin-top: 1rem;
 }
