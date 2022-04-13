@@ -7,13 +7,19 @@
 }
 
 .nav-bar img{
-    align-self: center;
+    align-self: baseline;
+    /* width: 10%; */
 }
 
 .landing{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 3rem;
+}
+
+.landing img{
+    width: 100%;
 }
 
 .landing-text{
@@ -59,7 +65,7 @@
     background-color: #fff0eb;
     background-position: 10rem;
     padding: 0.8rem 0 0.8rem 0;
-    margin-left: 8rem;
+    margin-left: 6rem;
 }
 
 .list div{
@@ -69,8 +75,44 @@
 }
 
 .list p{
-    align-items: flex-start;
-    /* padding: 0 5rem 0 5rem; */
+    text-align: left;
+    margin: 0 2rem 0 1rem;
+}
+
+.item-1::before{
+    content: "01";
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5rem;
+    text-align: center;
+    width: 1rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.item-2::before{
+    content: "02";
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5rem;
+    text-align: center;
+    width: 1rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.item-3::before{
+    content: "03";
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5rem;
+    text-align: center;
+    width: 1rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    position: absolute;
+    left: 1rem;
 }
 
 .reviews{
@@ -124,7 +166,7 @@ margin-top: 2rem;
     justify-content: center;
     align-items: baseline;
     gap: 0.5rem;
-    margin-left: 0.5rem;
+    padding-top: 2rem;
 }
 
 .footer form input{
@@ -136,11 +178,22 @@ margin-top: 2rem;
 
 .footer-menu{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    color: white;
+    padding-top: 4rem;
+}
+
+.footer-menu li a{
     font-weight: 400;
     color: white;
+    /* font-size: 1.6rem; */
+}
+
+.column-1,.column-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .footer-logos{
@@ -148,17 +201,86 @@ margin-top: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
+    padding-top: 3rem;
 }
 
 .icons{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
 }
 
+#copyright{
+    padding: 5rem 0 2rem 0;
+}
 
 
 .desktop{
     display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    p{
+        font-size: 1.7rem;
+    }
+    
+    .desktop{
+        display: contents;
+    }
+    
+    #mobile-menu{
+        display: none;
+    }
+
+    .desktop-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 30rem;
+    }
+
+    .desktop-menu ul{
+        display: flex;
+        gap: 2.8rem;
+        align-items: baseline;
+    }
+
+    .desktop-menu li{
+        font-size: 1.3rem;
+    }
+
+    .landing{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .landing img{
+        width: 100%;
+        margin-right: 14rem;
+        margin-top: 10rem;
+    }
+    
+    .landing-text{
+        align-items: flex-start;
+        margin-top: 16rem;
+        margin-left: 10rem;
+        /* margin-right: 6rem */
+    }
+
+    .landing-text h1{
+        font-size: 6rem;
+    }
+
+    .landing-text p{
+        margin-right: 14rem;
+    }
+
+    .landing-text h1,p,button{
+        text-align: left;
+    }
+
+    
 }

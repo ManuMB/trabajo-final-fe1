@@ -12,8 +12,8 @@
     <header>
         <nav class="nav-bar">
             <img src="images/logo.svg" alt="Logo de Manage">
-            <img src="images/icon-hamburger.svg" alt="Menu">
-            <div class="desktop">
+            <img id="mobile-menu" src="images/icon-hamburger.svg" alt="Menu">
+            <div class="desktop-menu desktop">
                 <ul>
                     <li>Pricing</li>
                     <li>Products</li>
@@ -40,15 +40,15 @@
                     <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
                 </div>
                 <div class="list">
-                    <div>
+                    <div class="item-1">
                         <h4>Track company-wide progress</h4>
                         <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
                     </div>
-                    <div>
+                    <div class="item-2">
                         <h4>Advance built-in reports</h4>
                         <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
                     </div>
-                    <div>
+                    <div class="item-3">
                         <h4>Everything you need in one place</h4>
                         <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
                     </div>
@@ -59,7 +59,7 @@
                 <div class="testimony">
                     <img src="images/avatar-ali.png">
                     <h4>Ali Bravo</h4>
-                    <p>“We have been able to cancel so many other subscriptions since using Manage. There ir no more cross-channel confusion and everyone is much more focused.”</p>
+                    <p>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
                 </div>
                 <div class="desktop testimony">
                     <img src="images/avatar-anisha.png">
@@ -69,7 +69,7 @@
                 <div class="desktop testimony">
                     <img src="images/avatar-richard.png">
                     <h4>Richard</h4>
-                    <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone i talk to!”</p>
+                    <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!”</p>
                 </div>
                 <button class="button-orange">Get started</button>
             </section>
@@ -80,18 +80,22 @@
                 </section>
                 <section class="footer">
                     <form class="form" action="#" method="POST">
-                        <input type="email" name="email" placeholder="Updates in your inbox...">
+                        <input type="email" name="email" placeholder="Updates in your inbox..." required>
                         <button type="submit" class="button-orange">GO</button>
                     </form>
-                    <ul class="footer-menu">
-                        <li>Home</li>
-                        <li>Pricing</li>
-                        <li>Products</li>
-                        <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Community</li>
-                        <li>Privacy Policy</li>
-                    </ul>
+                    <div class="footer-menu">
+                        <ul class="column-1">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                        <ul class="column-2">
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                     <div class="footer-logos">
                         <div class="icons">
                             <img src="images/icon-facebook.svg" alt="Logo de Facebook">
@@ -100,9 +104,9 @@
                             <img src="images/icon-pinterest.svg" alt="Logo de Pinterest">
                             <img src="images/icon-instagram.svg" alt="Logo de Instagram">
                         </div>
-                        <img class="logo" src="images/logo.svg" alt="Logo de Manage">
+                        <img class="logo" src="images/logo-white.svg" alt="Logo de Manage">
                     </div>
-                    <p>Copyright 2020. All Rights Reserved</p>
+                    <p id="copyright">Copyright 2020. All Rights Reserved</p>
                 </section>
             </footer>
         </main>
