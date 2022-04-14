@@ -11,15 +11,15 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <img src="images/logo.svg" alt="Logo de Manage">
-            <img id="mobile-menu" src="images/icon-hamburger.svg" alt="Menu">
+            <a href="#"><img id="nav-bar-logo" src="images/logo.svg" alt="Logo de Manage"></a>
+            <img class="mobile-menu mobile" src="images/icon-hamburger.svg" alt="Menu">
             <div class="desktop-menu desktop">
                 <ul>
-                    <li>Pricing</li>
-                    <li>Products</li>
-                    <li>About Us</li>
-                    <li>Careers</li>
-                    <li>Community</li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
                 </ul>
                 <button class="button-orange">Get started</button>
             </div>
@@ -38,6 +38,11 @@
                 <div class="list-title">
                     <h2>What's different about Manage?</h2>
                     <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+                </div>
+                <div class="numbers desktop">
+                    <p>01</p>
+                    <p>02</p>
+                    <p>03</p>
                 </div>
                 <div class="list">
                     <div class="item-1">
@@ -75,42 +80,49 @@
                 </div>
                 <button class="button-orange">Get started</button>
             </section>
-            <footer>
-                <section class="get-started">
-                    <h2>Simplify how your team works today.</h2>
-                    <button>Get started</button>
-                </section>
-                <section class="footer">
-                    <form class="form" action="#" method="POST">
+        </main>
+        <footer>
+            <section class="get-started">
+                <h2>Simplify how your team works today.</h2>
+                <button>Get started</button>
+            </section>
+            <section class="footer">
+                <form class="footer-form mobile" action="#" method="POST">
+                    <input type="email" name="email" placeholder="Updates in your inbox..." required>
+                    <button type="submit" class="button-orange">GO</button>
+                </form>
+                <div class="footer-menu">
+                    <ul class="column-1">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    <ul class="column-2">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logos">
+                    <div class="icons">
+                        <a href="#"><img src="images/icon-facebook.svg" alt="Logo de Facebook"></a>
+                        <a href="#"><img src="images/icon-youtube.svg" alt="Logo de YouTube"></a>
+                        <a href="#"><img src="images/icon-twitter.svg" alt="Logo de Twitter"></a>
+                        <a href="#"><img src="images/icon-pinterest.svg" alt="Logo de Pinterest"></a>
+                        <a href="#"><img src="images/icon-instagram.svg" alt="Logo de Instagram"></a>
+                    </div>
+                    <img class="logo" src="images/logo-white.svg" alt="Logo de Manage">
+                </div>
+                <p class="copyright mobile">Copyright 2020. All Rights Reserved</p>
+                <div class="footer-form-copyright desktop">
+                    <form class="footer-form" action="#" method="POST">
                         <input type="email" name="email" placeholder="Updates in your inbox..." required>
                         <button type="submit" class="button-orange">GO</button>
                     </form>
-                    <div class="footer-menu">
-                        <ul class="column-1">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">About Us</a></li>
-                        </ul>
-                        <ul class="column-2">
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-logos">
-                        <div class="icons">
-                            <img src="images/icon-facebook.svg" alt="Logo de Facebook">
-                            <img src="images/icon-youtube.svg" alt="Logo de YouTube">
-                            <img src="images/icon-twitter.svg" alt="Logo de Twitter">
-                            <img src="images/icon-pinterest.svg" alt="Logo de Pinterest">
-                            <img src="images/icon-instagram.svg" alt="Logo de Instagram">
-                        </div>
-                        <img class="logo" src="images/logo-white.svg" alt="Logo de Manage">
-                    </div>
                     <p id="copyright">Copyright 2020. All Rights Reserved</p>
-                </section>
-            </footer>
-        </main>
+                </div>
+            </section>
+        </footer>
 </body>
 </html>

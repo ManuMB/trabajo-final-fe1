@@ -1,16 +1,31 @@
+/* Nota para el profe: Algunas clases y variables definidas en normalize.css */
+/* Mobile hecho en 375px. Desktop hecho en 1280px.*/
+
+/* Inicio del HTML */
+/* Inicio del header */
 .nav-bar{
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     margin-top: 5rem;
     gap: 10rem;
 }
 
 .nav-bar img{
-    align-self: baseline;
-    /* width: 10%; */
+    align-self: center;
 }
 
+#nav-bar-logo{
+    transition: all .2s ease-in-out;
+}
+
+#nav-bar-logo:hover{
+    transform: scale(1.1);
+}
+/* Final del header */
+
+/* Inicio del main */
+/* Inicio de la seccion landing */
 .landing{
     display: flex;
     flex-direction: column;
@@ -35,10 +50,13 @@
 .landing-text h1{
     font-weight: 700;
     font-size: 3.5rem;
+    letter-spacing: -0.10rem;
     color: var(--secondary-color);
     text-align: center;
 }
+/* Fin de la seccion landing */
 
+/* Inicio de la seccion different */
 .different{
     display: flex;
     flex-direction: column;
@@ -114,7 +132,9 @@
     position: absolute;
     left: 1rem;
 }
+/* Fin de la seccion different */
 
+/* Inicio de la seccion reviews */
 .reviews{
     display: flex;
     flex-direction: column;
@@ -133,7 +153,11 @@
     gap: 2rem;
     padding: 0 3.5rem 0 3.5rem;
 }
+/* Fin de la seccion reviews */
+/* Fin del main */
 
+/* Inicio del footer */
+/* Inicio de la seccion get-started */
 .get-started{
     display: flex;
     flex-direction: column;
@@ -161,31 +185,49 @@ box-shadow: 0rem 0.4rem 0.8rem rgba(242, 97, 59, 0.5);
 margin-top: 1rem;
 }
 
+.get-started button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+/* Fin de la seccion get-started */
+
+/* Inicio de la seccion footer */
 .footer{
+    display: flex;
+    flex-direction: column;
     background-color: #1E1E26;
-    /* padding: 20rem 0 20rem 0; */
 }
 
-.footer form{
+.footer-form{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
+    order: 1;
     gap: 0.5rem;
     padding-top: 2rem;
 }
 
-.footer form input{
+.footer-form input{
     background-color: white;
     border-radius: 5rem;
     padding: 1.25rem 4.8rem 1.25rem 1rem;
     font-weight: 600;
 }
 
+.footer-form input:hover{
+    background-color: rgb(251, 242, 242);
+}
+
+.footer-form input:focus{
+    background-color: rgb(251, 242, 242);
+}
+
 .footer-menu{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    order: 2;
     color: white;
     padding-top: 4rem;
 }
@@ -193,7 +235,6 @@ margin-top: 1rem;
 .footer-menu li a{
     font-weight: 400;
     color: white;
-    /* font-size: 1.6rem; */
 }
 
 .column-1,.column-2{
@@ -207,8 +248,9 @@ margin-top: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    padding-top: 3rem;
+    order: 3;
+    gap: 4rem;
+    padding-top: 4rem;
 }
 
 .icons{
@@ -218,14 +260,20 @@ margin-top: 1rem;
     width: 100%;
 }
 
-#copyright{
+.copyright{
     padding: 5rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 4;
 }
-
 
 .desktop{
     display: none;
 }
+/* Fin de la seccion footer */
+/* Fin del footer */
+/* Fin del HTML */
 
 @media screen and (min-width: 1280px) {
     p{
@@ -239,21 +287,23 @@ margin-top: 1rem;
     h4{
         font-size: 1.6rem;
     }
+
+    .mobile{
+        display: none;
+    }
     
     .desktop{
         display: contents;
     }
-    
-    #mobile-menu{
-        display: none;
-    }
 
+    /* Inicio del HTML */
+    /* Inicio del header */
     .desktop-menu{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
-        gap: 30rem;
+        gap: 25rem;
     }
 
     .desktop-menu ul{
@@ -262,10 +312,19 @@ margin-top: 1rem;
         align-items: baseline;
     }
 
-    .desktop-menu li{
+    .desktop-menu li a{
         font-size: 1.3rem;
+        color: var(--secondary-color);
+        transition: color .2s ease-out, box-shadow .1s ease-in-out;
     }
+    
+    li a:hover{
+        color: var(--primary-color);
+    }
+    /* Final del header */
 
+    /* Inicio del main */
+    /* Inicio de la seccion landing */
     .landing{
         flex-direction: row-reverse;
         align-items: center;
@@ -274,7 +333,7 @@ margin-top: 1rem;
 
     .landing img{
         width: 100%;
-        margin-right: 14rem;
+        margin-right: 4rem;
         margin-top: 10rem;
     }
     
@@ -284,6 +343,7 @@ margin-top: 1rem;
         margin-top: 16rem;
         margin-left: 14rem;
         padding: 0;
+        gap: 1.5rem;
     }
 
     .landing-text h1{
@@ -297,10 +357,13 @@ margin-top: 1rem;
     .landing-text h1,p,button{
         text-align: left;
     }
+    /* Fin de la seccion landing */
 
+    /* Inicio de la seccion different */
     .different{
         flex-direction: row;
         align-items: flex-start;
+        gap: 2rem;
     }
 
     .list-title{
@@ -313,15 +376,31 @@ margin-top: 1rem;
         text-align: left;
     }
 
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11.6rem;
+        margin-left: 8rem;
+    }
+
+    .numbers p{
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        border-radius: 3rem;
+        padding: 1rem 2.5rem 1rem 2.5rem;
+    }
+
     .list{
-        margin-right: 22rem;
-        margin-left: 25rem;
         align-items: flex-start;
+        margin-right: 10rem;
     }
 
     .list p{
         margin: 0;
         text-align: left;
+        margin-right: 8rem;
     }
 
     .list h4{
@@ -331,17 +410,19 @@ margin-top: 1rem;
     }
 
     .item-1::before{
-        left: 70rem;
+        display: none;
     }
 
     .item-2::before{
-        left: 70rem;
+        display: none;
     }
 
     .item-3::before{
-        left: 70rem;
+        display: none;
     }
+    /* Fin de la seccion different */
 
+    /* Inicio de la seccion reviews */
     .reviews{
         flex-direction: column;
         gap: 4.5rem;
@@ -378,7 +459,11 @@ margin-top: 1rem;
     #testimony-3{
         order: 3;
     }
+    /* Fin de la seccion reviews */
+    /* Fin del main */
 
+    /* Inicio del footer */
+    /* Inicio de la seccion get-started */
     .get-started{
         flex-direction: row;
         justify-content: space-around;
@@ -391,4 +476,53 @@ margin-top: 1rem;
         margin: 0;
         width: 60rem;
     }
+    /* Fin de la seccion get-started */
+
+    /* Inicio de la seccion footer */
+    .footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-form{
+        order: 3;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-menu{
+        order: 2;
+        gap: 22rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-menu li a{
+        font-size: 1.4rem;
+        transition: color .2s ease-out, box-shadow .1s ease-in-out;
+    }
+
+    .footer-logos{
+        flex-direction: column-reverse;
+        order: 1;
+        padding-top: 0;
+    }
+
+    .footer-form-copyright{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+        padding-bottom: 4rem;
+        gap: 4rem;
+        order: 4;
+    }
+
+    .footer-form-copyright p{
+        font-size: 1.2rem;
+    }
+    /* Fin de la seccion footer */
+    /* Fin del footer */
+    /* Fin del HTML */
 }
